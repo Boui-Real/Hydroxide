@@ -8,6 +8,7 @@ function LocalScript.new(instance)
     localScript.Environment = getSenv(instance)
     localScript.Constants = getConstants(closure)
     localScript.Protos = getProtos(closure)
+    localScript.Decompiled = decompile(instance)
 
     return localScript
 end
